@@ -4,7 +4,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab-02 Fangfang</title>
+    <title>Hi, I'm Fangfang - Crafting Beautiful Websites and Powerful Web Applications as a Designer & Developer.
+    </title>
 
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -41,12 +42,9 @@
 
               <div class="menu-holder">
                 <ul class="menu_items upper">
-                  <li class="item active"><a>Home</a></li>
-                  <li class="item inactive"><a>about</a></li>
-                  <li class="item inactive"><a>menu</a></li>
-                  <li class="item inactive"><a>news</a></li>
-                  <li class="item inactive"><a>gallery</a></li>
-                  <li class="item inactive"><a>contact</a></li>
+                  <li class="item active"><a href="#">Home</a></li>
+                  <li class="item inactive"><a href="#offers">offers</a></li>
+                  <li class="item inactive"><a href="menu.html">Menu</a></li>
                 </ul>
               </div>
 
@@ -59,12 +57,12 @@
     <!-- Main contents -->
     <main>
 
-      <section class="main-banner">
+      <section id="learn" class="main-banner">
         <div class="container">
           <div class="banner-text">
             <h1 class="big-title capitallize">Welcome to eatWell</h1>
             <p>Come and eat well with our delicious & healthy foods.</p>
-            <a href="" class="btn-transparent capitallize">reservation</a>
+            <a href="#contact" class="btn-transparent capitallize">reservation</a>
           </div>
         </div>
       </section>
@@ -73,7 +71,6 @@
       <section class="story">
         <div class="container">
 
-
           <div class="story-flex">
 
             <div class="story-text">
@@ -81,10 +78,21 @@
                 <h1 class="small-title upper">Our story</h1>
                 <h2 class="big-title capitallize">welcome</h2>
               </div>
-              <p class="intro">Far far away. behind the word mountains, far from the countries Vokalia and Consonantia,
-                there live the blind texts.</p>
-              <p>A samll river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+              <p class="intro">Welcome to EATWELL, where culinary excellence meets exceptional service. Our
+                passion for food is reflected in
+                every dish we prepare, using only the finest ingredients and time-honored techniques. We believe in
+                creating memorable
+                dining experiences that leave a lasting impression, whether you're here for a casual meal or a special
+                celebration.
+
+              </p>
+              <p>At EATWELL, we take pride in offering a diverse menu that caters to every taste. From
+                signature dishes to
+                seasonal specials, each meal is crafted with care to ensure the highest quality and flavor. Our
+                dedicated team is here
+                to make every visit unique, welcoming, and unforgettable.
+
+                Thank you for choosing us – we look forward to serving you soon!</p>
               <div class="btn">
 
                 <!--data-fancybox -->
@@ -106,7 +114,7 @@
       </section>
 
 
-      <section class="offer">
+      <section id="offers" class="offer">
         <div class="container">
           <div class="divider-texts">
             <h1 class="small-title upper">Our offers</h1>
@@ -197,6 +205,39 @@
         </div>
       </section>
 
+
+      <section id="contact">
+        <div class="contact-container">
+          <h2>Contact Us</h2>
+          <p>We're here to help with reservations, events, or any questions you may have!</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <h3>Phone</h3>
+              <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            </div>
+
+            <div class="contact-item">
+              <h3>Email</h3>
+              <p><a href="mailto:info@restaurant.com">info@restaurant.com</a></p>
+            </div>
+
+            <div class="contact-item">
+              <h3>Location</h3>
+              <p>123 Delicious Ave,<br>Food City, FL 12345</p>
+            </div>
+          </div>
+
+          <form action="/submit-form" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+
     </main>
 
     <footer class="footer">
@@ -206,9 +247,12 @@
             <div class="about-us">
               <div class="bold-title upper">about us</div>
               <p class="footer-about">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque odio sequi blanditiis commodi quis
-                dolore aliquam officia labore itaque, voluptates dolores porro autem amet pariatur temporibus vel
-                distinctio ratione.</p>
+                At EATWELL, we're dedicated to serving delicious food with a focus on quality and freshness.
+                Our team of chefs
+                uses only the finest ingredients to create mouthwatering dishes that bring people together. Whether
+                you're here for a
+                quick bite or a special gathering, we’re committed to providing you with an unforgettable dining
+                experience.</p>
             </div>
           </div>
           <div class="right">
@@ -256,8 +300,9 @@
           </div>
         </div>
 
-        <div class="rights capitallize">@Copyright @2024 All rights reserved | This template is mad with <i
-            class="bi bi-heart-fill"></i> by XXXXX
+        <div class="rights capitallize">© 2024 Fangfang Chen. All rights reserved.
+          Unauthorized reproduction or use of the code or content is prohibited. | This website is mad with <i
+            class="bi bi-heart-fill"></i> by Fangfang
         </div>
       </div>
 
@@ -276,6 +321,7 @@
     <!-- Fancybox -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
+    <script src="header.js"></script>
 
     <script>
 

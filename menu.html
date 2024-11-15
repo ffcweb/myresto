@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi, I'm Fangfang - Crafting Beautiful Websites and Powerful Web Applications as a Designer & Developer.
+    </title>
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Agdasima:wght@400;700&family=Bebas+Neue&family=Bellefair&family=Catamaran:wght@100..900&family=Chathura:wght@100;300;400;700;800&family=Cuprum:ital,wght@0,400..700;1,400..700&family=Didact+Gothic&family=Figtree:ital,wght@0,300..900;1,300..900&family=Hind:wght@300;400;500;600;700&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Palanquin:wght@100;200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Radio+Canada:ital,wght@0,300..700;1,300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header class="nav">
+      <section class="nav-bar">
+        <div class="container">
+          <div class="menu">
+            <div class="nav-flex">
+              <div><a href="index.html" class="logo">eatWell</a></div>
+              <div class="burger-icon">
+                <i class="bi bi-list"></i>
+              </div>
+
+              <div class="menu-holder">
+                <ul class="menu_items upper">
+                  <li class="item active"><a href="index.html">Home</a></li>
+                  <li class="item inactive"><a href="index.html">Offers</a></li>
+                  <li class="item inactive"><a href="menu.html">Menu</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <section class="main-banner">
+      <div class="container">
+        <div class="banner-text">
+          <h1 class="big-title capitallize">Welcome to eatWell</h1>
+          <p>Come and eat well with our delicious & healthy foods.</p>
+          <a href="index.html" class="btn-transparent capitallize">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main contents -->
+    <main>
+
+      <section id="dish-menu">
+        <div class="menu-container">
+
+
+          <!-- Tabs for Categories -->
+          <div class="tabs">
+            <button class="tab-button active" data-tab="appetizers">Appetizers</button>
+            <button class="tab-button" data-tab="mains">Main Dishes</button>
+            <button class="tab-button" data-tab="desserts">Desserts</button>
+            <button class="tab-button" data-tab="drinks">Drinks</button>
+          </div>
+
+          <!-- Menu Items (Tabs Content) -->
+          <div class="menu-items">
+            <!-- Appetizers Section -->
+            <div id="appetizers" class="menu-tab active">
+              <div class="menu-item">
+                <img
+                  src="https://images.unsplash.com/photo-1564844536325-08c9e7f70617?q=80&w=3871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Spring Rolls">
+                <div class="menu-text">
+                  <h4>Spring Rolls</h4>
+                  <p>Golden crispy rolls with fresh veggies. Served with dipping sauce.</p>
+                  <p class="price">$6.99</p>
+                  <button class="add-to-cart" data-name="Spring Rolls" data-price="6.99">Add to Cart</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <img
+                  src="https://images.unsplash.com/photo-1647667092813-657795257d00?q=80&w=3773&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Garlic Bread">
+                <div class="menu-text">
+                  <h4>Garlic Bread</h4>
+                  <p>Toasted baguette slices topped with garlic butter and herbs.</p>
+                  <p class="price">$4.99</p>
+                  <button class="add-to-cart" data-name="Garlic Bread" data-price="4.99">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Main Dishes Section -->
+            <div id="mains" class="menu-tab">
+              <div class="menu-item">
+                <img
+                  src="https://images.unsplash.com/photo-1611599537845-1c7aca0091c0?q=80&w=3774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Grilled Salmon">
+                <div class="menu-text">
+                  <h4>Grilled Salmon</h4>
+                  <p>Fresh salmon fillet grilled to perfection with a lemon butter sauce.</p>
+                  <p class="price">$18.99</p>
+                  <button class="add-to-cart" data-name="Grilled Salmon" data-price="18.99">Add to Cart</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <img
+                  src="https://images.unsplash.com/photo-1659881981676-33ab127152c0?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Steak & Fries">
+                <div class="menu-text">
+                  <h4>Steak & Fries</h4>
+                  <p>Juicy ribeye steak with crispy seasoned fries and a side of salad.</p>
+                  <p class="price">$22.99</p>
+                  <button class="add-to-cart" data-name="Steak & Fries" data-price="22.99">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desserts Section -->
+            <div id="desserts" class="menu-tab">
+              <div class="menu-item">
+                <img
+                  src="https://images.unsplash.com/photo-1625497248300-475c9557dd3a?q=80&w=3472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Chocolate Cake">
+                <div class="menu-text">
+                  <h4>Chocolate Cake</h4>
+                  <p>Rich and moist chocolate cake with creamy ganache frosting.</p>
+                  <p class="price">$7.99</p>
+                  <button class="add-to-cart" data-name="Chocolate Cake" data-price="7.99">Add to Cart</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <img
+                  src="https://images.unsplash.com/photo-1708175313856-8573b2bf8a3a?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Cheesecake">
+                <div class="menu-text">
+                  <h4>Cheesecake</h4>
+                  <p>Classic creamy cheesecake with a graham cracker crust.</p>
+                  <p class="price">$8.99</p>
+                  <button class="add-to-cart" data-name="Cheesecake" data-price="8.99">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Drinks Section -->
+            <div id="drinks" class="menu-tab">
+              <div class="menu-item">
+                <img
+                  src="https://images.unsplash.com/photo-1601816993296-a2d1ce3e001f?q=80&w=3146&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Iced Coffee">
+                <div class="menu-text">
+                  <h4>Iced Coffee</h4>
+                  <p>Refreshing cold brew coffee served over ice.</p>
+                  <p class="price">$3.99</p>
+                  <button class="add-to-cart" data-name="Iced Coffee" data-price="3.99">Add to Cart</button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <img
+                  src="https://images.unsplash.com/photo-1660225411990-6d5a97be1966?q=80&w=3871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Fresh Lemonade">
+                <div class="menu-text">
+                  <h4>Fresh Lemonade</h4>
+                  <p>Freshly squeezed lemonade with a hint of mint.</p>
+                  <p class="price">$2.99</p>
+                  <button class="add-to-cart" data-name="Fresh Lemonade" data-price="2.99">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shopping Cart -->
+          <div id="cart">
+            <h3>Your Order</h3>
+            <ul id="cart-items"></ul>
+            <p class="total">Total: $<span id="total-price">0.00</span></p>
+            <button id="checkout-btn">Checkout</button>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-flex">
+          <div class="left">
+            <div class="about-us">
+              <div class="bold-title upper">about us</div>
+              <p class="footer-about">
+                At EATWELL, we're dedicated to serving delicious food with a focus on quality and freshness.
+                Our team of chefs
+                uses only the finest ingredients to create mouthwatering dishes that bring people together. Whether
+                you're here for a
+                quick bite or a special gathering, we’re committed to providing you with an unforgettable dining
+                experience.</p>
+            </div>
+          </div>
+          <div class="right">
+            <div class="grid">
+              <div class="title">
+                <div class="bold-title upper">the-restaurant</div>
+                <div class="footer-item capitallize ">
+                  <p class="intro ">about us</p>
+                  <p class="intro ">chefs </p>
+                  <p class="intro ">events</p>
+                  <p class="intro ">contact</p>
+                </div>
+              </div>
+              <div class="links">
+                <div class="bold-title upper">useful links</div>
+                <div class="footer-item capitallize ">
+                  <p class="intro ">food</p>
+                  <p class="intro ">chefs </p>
+                  <p class="intro ">events</p>
+                  <p class="intro ">contact</p>
+                </div>
+              </div>
+              <div class="links">
+                <div class="bold-title upper">useful links</div>
+                <div class="footer-item capitallize ">
+                  <p class="intro ">food</p>
+                  <p class="intro ">chefs </p>
+                  <p class="intro ">events</p>
+                  <p class="intro ">contact</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <div class="footer-icons circle">
+            <i class="bi bi-twitter "></i>
+          </div>
+          <div class="footer-icons circle">
+            <i class="bi bi-facebook "></i>
+          </div>
+          <div class="footer-icons circle">
+            <i class="bi bi-instagram "></i>
+          </div>
+        </div>
+
+        <div class="rights capitallize">@Copyright @2024 All rights reserved | This template is mad with <i
+            class="bi bi-heart-fill"></i> by XXXXX
+        </div>
+      </div>
+
+      </div>
+    </footer>
+
+    <script src="header.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
