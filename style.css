@@ -116,6 +116,9 @@ a {
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
+  /* border-radius: 0% 0% 20% 20%; */
+  border-bottom-right-radius: 70em 5em;
+  border-bottom-left-radius: 70em 5em;
   padding: 260px 0;
 }
 
@@ -151,11 +154,13 @@ a {
 .main-banner .banner-text a:hover {
   font-size: 16px;
   background-color: gold;
-  border: 2px solid #fff;
+  border: 0px;
+  box-shadow: 3px 3px 5px rgb(152, 103, 12);
   color: #000;
   text-decoration: none;
 }
 
+/* Story section */
 .story {
   padding-top: 100px;
   padding-bottom: 120px;
@@ -176,6 +181,7 @@ a {
   background: url(assests/chef.jpg) rgba(0, 0, 0, 0.5);
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: 3px 3px 5px rgb(29, 29, 29);
 }
 
 .story-text p {
@@ -207,16 +213,19 @@ a {
 }
 
 .fancy-btn {
-  margin-top: 40px;
   background-color: gold;
+  color: #000;
+  margin-top: 40px;
+  border-radius: 5px;
   border: 2px solid gold;
+  box-shadow: 5px 4px 2px 0px rgb(152, 103, 12);
   font-size: 18px;
-  padding: 15px 15px;
+  padding: 8px 10px;
+  cursor: pointer;
 }
 
 .fancy-btn:hover {
   background-color: transparent;
-  border: 2px solid gold;
 }
 
 /* Fancybox size */
@@ -281,6 +290,13 @@ iframe {
 .cards-grid .card {
   background-color: white;
   padding-bottom: 60px;
+  transition: transform 0.1s ease-in-out, background-color 0.1s ease-in-out; /* Smooth transition for both transform and background */
+  background-color: #fff; /* Ensure initial background color */
+}
+
+.cards-grid .card:hover {
+  background-color: #d8d7d7; /* Background color change on hover */
+  transform: translateY(-40px); /* Moves the card 10px down on hover */
 }
 
 .card .texts {
@@ -320,11 +336,17 @@ iframe {
 
 .card .texts a {
   font-size: 15px;
-  color: 000;
-  padding: 15px 25px;
-  background-color: gold;
-  border-radius: 10px;
   text-decoration: none;
+  color: #000;
+  padding: 8px 15px;
+  background-color: gold;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.card .texts a:hover {
+  border: 2px solid gold;
+  box-shadow: 5px 4px 2px 0px rgb(152, 103, 12);
 }
 
 .gallery {
@@ -497,7 +519,7 @@ iframe {
   padding: 12px;
   border: none;
   border-radius: 4px;
-  background-color: #db6314;
+  background-color: rgb(105, 72, 9);
   color: #fff;
   font-size: 1em;
   cursor: pointer;
@@ -506,12 +528,16 @@ iframe {
 
 .contact-form button:hover {
   background-color: #000;
+  box-shadow: 5px 5px 5px rgb(126, 85, 11);
 }
 
 /* Menu Section */
 #dish-menu {
   padding: 100px 0px;
   background-color: #fff;
+}
+#dish-menu img:hover {
+  transform: scale(140%);
 }
 
 #dish-menu .menu-container {
@@ -564,7 +590,8 @@ iframe {
 .tab-button:hover {
   background-color: gold;
   color: #000;
-  /* border: 2px solid #000; */
+  border: 2px solid gold;
+  box-shadow: 5px 4px 2px 0px rgb(152, 103, 12);
 }
 
 /* Center - Menu Items */
@@ -637,6 +664,8 @@ button.add-to-cart {
 button.add-to-cart:hover {
   background-color: gold;
   color: #000;
+  border: 2px solid gold;
+  box-shadow: 5px 4px 2px 0px rgb(152, 103, 12);
 }
 
 /* Right side - Cart */
@@ -680,6 +709,7 @@ button.add-to-cart:hover {
 }
 
 #checkout-btn {
+  border-radius: 5px;
   padding: 10px 20px;
   background-color: #000;
   color: white;
@@ -691,12 +721,11 @@ button.add-to-cart:hover {
 #checkout-btn:hover {
   background-color: gold;
   color: #000;
+  border: 2px solid gold;
+  box-shadow: 5px 4px 2px 0px rgb(152, 103, 12);
 }
 
 @media screen and (max-width: 1200px) {
-  body {
-    border: 5px solid red;
-  }
   .menu-container {
     flex-direction: column;
   }
