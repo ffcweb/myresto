@@ -186,12 +186,37 @@
             <p class="total">Total: $<span id="total-price">0.00</span></p>
             <button id="checkout-btn">Checkout</button>
           </div>
+
         </div>
       </section>
 
+      <div id="checkout-form">
+        <div class="container">
+          <h2>Payment Details</h2>
+          <div class="flex">
+            <form id="payment-form">
+              <label for="name">Name on Card:</label><br>
+              <input type="text" id="name" required><br><br>
+              <label for="card">Card Number:</label><br>
+              <input type="text" id="card" maxlength="16" required><br><br>
+              <label for="exp">Expiry Date:</label><br>
+              <input type="month" id="exp" required><br><br>
+              <label for="cvv">CVV:</label><br>
+              <input type="text" id="cvv" maxlength="3" required><br><br>
+              <button type="submit">Submit Payment</button>
+            </form>
+
+
+            <div class="checkout-img" style="background-image:
+            url(https://img.freepik.com/free-vector/credit-card-landing-page-payment-concept_23-2148298750.jpg);">
+            </div>
+
+
+          </div>
+        </div>
+      </div>
 
     </main>
-
 
     <footer class="footer">
       <div class="container">
@@ -241,6 +266,7 @@
           </div>
         </div>
 
+
         <div class="sub-section">
           <div class="footer-icons circle">
             <i class="bi bi-twitter "></i>
@@ -257,13 +283,15 @@
           Unauthorized reproduction or use of the code or content is prohibited. | This website is mad with <i
             class="bi bi-heart-fill"></i> by Fangfang
         </div>
-      </div>
 
       </div>
+      </div>
+
     </footer>
 
     <script src="header.js"></script>
     <script src="script.js"></script>
+    <script src="payment.js"></script>
 
   </body>
 

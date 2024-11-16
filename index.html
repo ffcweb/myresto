@@ -211,7 +211,7 @@
         <div class="contact-container">
           <h2>Contact Us</h2>
           <p>We're here to help with reservations, events, or any questions you may have!</p>
-
+          <p>Tuesday to Sunday : from 5:30 pm to 10 pm </p>
           <div class="contact-details">
             <div class="contact-item">
               <h3>Phone</h3>
@@ -224,18 +224,29 @@
             </div>
 
             <div class="contact-item">
-              <h3>Location</h3>
-              <p>123 Delicious Ave,<br>Food City, FL 12345</p>
+              <a
+                href="https://www.google.com/maps?sca_esv=cd9ae887f40522c5&biw=1996&bih=969&output=search&q=123+Delicious+Ave,+Food+City,+FL+12345&source=lnms&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkW1DRbm01j6DCVS0r1sTxn7rqU1uhV7mfeoM5P4clGxag45l9rnOHVicguLEqNedpVgSwR7YjS1GwNGVXf-cbrkwQxBgAEphLSELP4sTzZbeGdvwceuftvkq10o2iHPhVmn3mDll9JnMZMzZcgRUDi414-76ZtQtdmAgj2OR567kCbHAGjcaQqQq9IYyKIrfm9Bgd5ig&entry=mc&ved=1t:200715&ictx=111">
+                <h3>Location</h3>
+              </a>
+              <a
+                href="https://www.google.com/maps?sca_esv=cd9ae887f40522c5&biw=1996&bih=969&output=search&q=123+Delicious+Ave,+Food+City,+FL+12345&source=lnms&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkW1DRbm01j6DCVS0r1sTxn7rqU1uhV7mfeoM5P4clGxag45l9rnOHVicguLEqNedpVgSwR7YjS1GwNGVXf-cbrkwQxBgAEphLSELP4sTzZbeGdvwceuftvkq10o2iHPhVmn3mDll9JnMZMzZcgRUDi414-76ZtQtdmAgj2OR567kCbHAGjcaQqQq9IYyKIrfm9Bgd5ig&entry=mc&ved=1t:200715&ictx=111">
+                <p>123 Delicious Ave,<br>Food City, FL 12345</p>
+              </a>
+
             </div>
           </div>
 
-          <form action="/submit-form" method="POST" class="contact-form">
+          <form action="" method="" class="contact-form">
             <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="phone" placeholder="Your phone number" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
           </form>
         </div>
+
+        <div id="toast" class="toast">Your message has been sent!</div>
+
       </section>
 
 
@@ -318,6 +329,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
     <script src="header.js"></script>
+    <script src="contact.js"></script>
 
     <script>
 
